@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - LaptopsAnDNotebook Test</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>LaptopsAnDNotebook Test</h1>
+<p>
+  Test duration: 37.619s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyThatUserPlaceOrderSuccessfully
+      </td>
+  <td class="duration">
+    27.769s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Mouse Hover On LaptopsAndNoteBooks And Click[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                click on show All LaptopsAndNotebooks[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //a[contains(text(),&apos;Show AllLaptops &amp; Notebooks&apos;)]]<br />
+                                select option &apos;Price (High &gt; Low)&apos; from SortBy dropdown field[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; id: input-sort]<br />
+                                Click on SonyVAIO Product[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; link text: Sony VAIO]<br />
+                                Get product title text[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //div[@id=&apos;content&apos;]//h1]<br />
+                                Click on AddToCart button[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //button[@id=&apos;button-cart&apos;]]<br />
+                                Get Notification Message[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]<br />
+                                Click on Shopping Cart link from notification messageProxy element for: DefaultElementLocator &apos;By.xpath: //a[contains(text(),&apos;shopping cart&apos;)]&apos;<br />
+                                Get Shopping cart text[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //div[@id=&apos;content&apos;]//h1]<br />
+                                Get Product Name text[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //div[@class = &apos;table-responsive&apos;]/table/tbody/tr/td[2]/a]<br />
+                                Clear pre-populated text from Quantity field[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //input[contains(@name, &apos;quantity&apos;)]]<br />
+                                Enter value 2into quantity field[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //input[contains(@name, &apos;quantity&apos;)]]<br />
+                                Click on Update tab[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //button[@data-original-title=&apos;Update&apos;]]<br />
+                                Get notification text[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //div[@class=&apos;alert alert-success alert-dismissible&apos;]]<br />
+                                Get Total Price text[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //tbody//tr//td[6]]<br />
+                                Click on Checkout button[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; xpath: //a[contains(text(),&apos;Checkout&apos;)]]<br />
+                                Get Checkout Text[[ChromeDriver: chrome on windows (09ce45d2ccadf8a36b5a679a43e8611f)] -&gt; css selector: div[id=&apos;content&apos;] h1]<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Checkout text is mismatched expected [Checkout] but found [Shopping Cart&nbsp; (0.00kg)]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.testng.Assert.fail(Assert.java:111)<br />
+              org.testng.Assert.failNotEquals(Assert.java:1578)<br />
+              org.testng.Assert.assertEqualsImpl(Assert.java:150)<br />
+              org.testng.Assert.assertEquals(Assert.java:132)<br />
+              org.testng.Assert.assertEquals(Assert.java:656)<br />
+              com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest.verifyThatUserPlaceOrderSuccessfully(LaptopsAndNotebooksTest.java:97)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)<br />
+              org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)<br />
+              org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)<br />
+              org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)<br />
+              org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)<br />
+              org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)<br />
+              org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)<br />
+              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:739)<br />
+              org.testng.TestRunner.run(TestRunner.java:614)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:421)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:312)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1208)<br />
+              org.testng.TestNG.runSuites(TestNG.java:1112)<br />
+              org.testng.TestNG.run(TestNG.java:1079)<br />
+              com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)<br />
+              com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">com.tutorialsninja.demo.testsuite.LaptopsAndNotebooksTest</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  verifyProductsPriceDisplayHighToLowSuccessfully
+      </td>
+  <td class="duration">
+    1.619s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Mouse Hover On LaptopsAndNoteBooks And Click[[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; link text: Laptops &amp; Notebooks]<br />
+                                click on show All LaptopsAndNotebooks[[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: //a[contains(text(),&apos;Show AllLaptops &amp; Notebooks&apos;)]]<br />
+                                Get laptop and notebook products list[[[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])]]<br />
+                                select option &apos;Price (High &gt; Low)&apos; from SortBy dropdown field[[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; id: input-sort]<br />
+                                Get laptop and notebook products list[[[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])], [[ChromeDriver: chrome on windows (4df6625573f08cfb618d1da6aed0cc74)] -&gt; xpath: (//p[@class=&apos;price&apos;])]]<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
